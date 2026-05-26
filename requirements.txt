@@ -2,6 +2,8 @@
 fastapi
 uvicorn
 langchain
+langchain-classic
+langchain-huggingface
 langchain-openai
 langchain-community
 langchain-postgres
@@ -22,3 +24,6 @@ redis
 langchain-cohere
 cohere
 datasets
+sentence_transformers
+chromadb
+langchain-groq
