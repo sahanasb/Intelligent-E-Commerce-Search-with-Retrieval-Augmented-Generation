@@ -1,3 +1,4 @@
+### RAG With SBERT and BGEReranker
 import os
 import asyncio
 from typing import Any, Optional
@@ -111,7 +112,7 @@ def _build_chain():
 
     load_dotenv()
     llm = ChatGroq(
-        model="qwen/qwen3-32b",
+        model="llama-3.3-70b-versatile",
         groq_api_key=os.getenv("GROQ_API_KEY"),
         temperature=0.7,
         max_tokens=512,

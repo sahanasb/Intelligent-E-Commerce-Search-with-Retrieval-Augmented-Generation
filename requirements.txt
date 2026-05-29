@@ -27,3 +27,4 @@ datasets
 sentence_transformers
 chromadb
 langchain-groq
+rank_bm25
