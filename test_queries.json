@@ -1,0 +1,42 @@
+[
+  {
+    "question": "I need a Speaker for beach party",
+    "category": "Speakers"
+  },
+  {
+    "question": "I always want to check time, what should I buy?",
+    "category": "Watches"
+  },
+  {
+    "question": "I need wireless headphones for working out at the gym",
+    "category": "Headphones"
+  },
+  {
+    "question": "Looking for a laptop bag that fits a 15 inch laptop",
+    "category": "Bags"
+  },
+  {
+    "question": "I want a smartwatch that tracks my sleep and heart rate",
+    "category": "Watches"
+  },
+  {
+    "question": "Need a portable charger for long trips",
+    "category": "Power Banks"
+  },
+  {
+    "question": "What are the best noise cancelling headphones under 100 dollars?",
+    "category": "Headphones"
+  },
+  {
+    "question": "I want a Bluetooth speaker that is waterproof and loud",
+    "category": "Speakers"
+  },
+  {
+    "question": "Looking for a USB hub with multiple ports for my desk setup",
+    "category": "USB Hubs"
+  },
+  {
+    "question": "I need gaming headphones with surround sound",
+    "category": "Headphones"
+  }
+]
