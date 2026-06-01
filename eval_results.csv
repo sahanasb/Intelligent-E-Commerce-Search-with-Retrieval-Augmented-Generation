@@ -1,0 +1,7 @@
+pipeline,model,answer_relevancy
+Vector (SBERT+BGE),llama,0.7263
+Vector (SBERT+BGE),qwen,0.7338
+BM25+BGE,llama,0.7394
+BM25+BGE,qwen,0.7046
+Hybrid (BM25+Vector+BGE),llama,0.7516
+Hybrid (BM25+Vector+BGE),qwen,0.7322
