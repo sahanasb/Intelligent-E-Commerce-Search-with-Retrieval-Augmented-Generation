@@ -1,0 +1,66 @@
+[
+  {"id": 1,  "question": "I need a speaker for a beach party",                          "category": "Speakers"},
+  {"id": 2,  "question": "What is a good portable bluetooth speaker for outdoor use",   "category": "Speakers"},
+  {"id": 3,  "question": "Recommend an affordable home theater speaker system",         "category": "Speakers"},
+  {"id": 4,  "question": "I want a waterproof speaker for camping trips",               "category": "Speakers"},
+  {"id": 5,  "question": "Best mini bluetooth speaker that fits in a bag",              "category": "Speakers"},
+
+  {"id": 6,  "question": "I need wireless headphones for the gym",                      "category": "Headphones"},
+  {"id": 7,  "question": "Recommend noise cancellin   g headphones for travel",            "category": "Headphones"},
+  {"id": 8,  "question": "ßWhat are the best budget earphones under 1000 rupees",        "category": "Headphones"},
+  {"id": 9,  "question": "I want over ear headphones with long battery life",           "category": "Headphones"},
+  {"id": 10, "question": "Best wired earphones with mic for online calls",              "category": "Headphones"},
+
+  {"id": 11, "question": "I need a 5G smartphone with good camera under 20000",        "category": "Phones"},
+  {"id": 12, "question": "Recommend a phone with large battery for heavy users",        "category": "Phones"},
+  {"id": 13, "question": "Best budget Android phone with 128GB storage",               "category": "Phones"},
+  {"id": 14, "question": "I want a smartphone good for gaming and performance",         "category": "Phones"},
+  {"id": 15, "question": "Recommend a phone with good display for watching videos",     "category": "Phones"},
+
+  {"id": 16, "question": "I need a full HD smart TV for a small bedroom",              "category": "Televisions"},
+  {"id": 17, "question": "Best 4K QLED television for home theatre setup",             "category": "Televisions"},
+  {"id": 18, "question": "Recommend an affordable 32 inch LED TV",                     "category": "Televisions"},
+  {"id": 19, "question": "I want a smart android TV with good picture quality",        "category": "Televisions"},
+  {"id": 20, "question": "Best television brand for watching sports in bright rooms",  "category": "Televisions"},
+
+  {"id": 21, "question": "I need a single door refrigerator for a small apartment",    "category": "Refrigerators"},
+  {"id": 22, "question": "Recommend an energy efficient inverter refrigerator",        "category": "Refrigerators"},
+  {"id": 23, "question": "Best double door refrigerator for a family of 4",            "category": "Refrigerators"},
+  {"id": 24, "question": "I want a mini fridge for my car or road trips",              "category": "Refrigerators"},
+  {"id": 25, "question": "Recommend a frost free refrigerator with good reviews",      "category": "Refrigerators"},
+
+  {"id": 26, "question": "I need a DSLR camera for beginner photography",              "category": "Cameras"},
+  {"id": 27, "question": "Best projector for home office presentations",               "category": "Cameras"},
+  {"id": 28, "question": "Recommend a security surveillance camera for indoors",       "category": "Cameras"},
+  {"id": 29, "question": "I want a camera tripod that is sturdy and lightweight",      "category": "Cameras"},
+  {"id": 30, "question": "Best action camera for adventure and outdoor sports",        "category": "Cameras"},
+
+  {"id": 31, "question": "I need a classic analog watch for formal office wear",       "category": "Mens Watches"},
+  {"id": 32, "question": "Recommend a digital sports watch for men",                   "category": "Mens Watches"},
+  {"id": 33, "question": "Best couple watch gift set under 2000 rupees",               "category": "Mens Watches"},
+
+  {"id": 34, "question": "I want an elegant analog watch for women",                   "category": "Womens Watches"},
+  {"id": 35, "question": "Recommend a rose gold women's watch for gifting",            "category": "Womens Watches"},
+  {"id": 36, "question": "Best branded women's watch with good ratings",               "category": "Womens Watches"},
+
+  {"id": 37, "question": "I need formal leather shoes for office use",                 "category": "Mens Formal Shoes"},
+  {"id": 38, "question": "Recommend lightweight running shoes for men",                "category": "Mens Sports Shoes"},
+  {"id": 39, "question": "Best casual slip on shoes for women",                        "category": "Womens Shoes"},
+
+  {"id": 40, "question": "I need a school bag for a 10 year old child",                "category": "School Bags"},
+  {"id": 41, "question": "Recommend a travel backpack with laptop compartment",        "category": "School Bags"},
+
+  {"id": 42, "question": "Best educational toys for kids aged 4 to 6",                "category": "Toys and Games"},
+  {"id": 43, "question": "I want an outdoor activity toy for energetic kids",          "category": "Toys and Games"},
+
+  {"id": 44, "question": "Recommend a safe hanging toy for newborn babies",            "category": "Baby Products"},
+  {"id": 45, "question": "Best baby clothing set for infants under 1 year",            "category": "Baby Products"},
+
+  {"id": 46, "question": "I need a beginner acoustic guitar or flute",                 "category": "Musical Instruments"},
+  {"id": 47, "question": "Best microphone for YouTube recording at home",              "category": "Musical Instruments"},
+
+  {"id": 48, "question": "Recommend a home gym kit for strength training beginners",   "category": "Strength Training"},
+  {"id": 49, "question": "Best weight lifting belt for heavy workouts",                "category": "Strength Training"},
+
+  {"id": 50, "question": "I want a slam ball for core and cardio training",            "category": "Strength Training"}
+]
