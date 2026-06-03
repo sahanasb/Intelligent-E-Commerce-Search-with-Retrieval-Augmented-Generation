@@ -1,0 +1,539 @@
+{
+  "pipeline": "RAG_HYBRID_SEARCH",
+  "average_faithfulness": 0.7713,
+  "per_query": [
+    {
+      "question": "I need a speaker for a beach party",
+      "faithfulness": 0.8462,
+      "supported_claims": 11,
+      "total_claims": 13,
+      "unsupported_claims": [
+        "Based on your needs, I'd like to recommend the following products from our catalog:\n\n1.",
+        "It's also waterproof and has a battery life of up to 6 hours."
+      ]
+    },
+    {
+      "question": "What is a good portable bluetooth speaker for outdoor use",
+      "faithfulness": 0.8333,
+      "supported_claims": 5,
+      "total_claims": 6,
+      "unsupported_claims": [
+        "Ultimately, the choice depends on your specific needs and preferences."
+      ]
+    },
+    {
+      "question": "Recommend an affordable home theater speaker system",
+      "faithfulness": 0.8571,
+      "supported_claims": 6,
+      "total_claims": 7,
+      "unsupported_claims": [
+        "Our top recommendations are based on price, features, and customer reviews."
+      ]
+    },
+    {
+      "question": "I want a waterproof speaker for camping trips",
+      "faithfulness": 0.8,
+      "supported_claims": 8,
+      "total_claims": 10,
+      "unsupported_claims": [
+        "Based on your query, I've shortlisted two excellent options that fit your needs.",
+        "Its compact design makes it perfect for camping trips, and the wireless connectivity allows you to stream music from your device with ease."
+      ]
+    },
+    {
+      "question": "Best mini bluetooth speaker that fits in a bag",
+      "faithfulness": 0.7,
+      "supported_claims": 7,
+      "total_claims": 10,
+      "unsupported_claims": [
+        "Its high rating and affordable price make it an attractive option.",
+        "Its affordable price and decent rating make it a good option for those on a budget.",
+        "If you'd like to explore more options or have specific preferences (e.g., brand, price range, or features), please let me know, and I'll be happy to assist you further."
+      ]
+    },
+    {
+      "question": "I need wireless headphones for the gym",
+      "faithfulness": 0.6,
+      "supported_claims": 9,
+      "total_claims": 15,
+      "unsupported_claims": [
+        "They are a great value option, priced at $17.59, with a rating of 4.0 out of 5 stars from 2 reviews.",
+        "They come with a convenient zip pouch for easy storage.",
+        "Priced at $39.59, they have a rating of 3.4 out of 5 stars from 45 reviews.",
+        "They are designed specifically for workouts and are a great option if you're looking for a high-quality, long-lasting product.",
+        "Priced at $60.49, they have an excellent rating of 4.0 out of 5 stars from 3635 reviews.",
+        "Please let me know if you have any further questions or if you'd like to compare these options in more detail."
+      ]
+    },
+    {
+      "question": "Recommend noise cancellin   g headphones for travel",
+      "faithfulness": 0.7778,
+      "supported_claims": 7,
+      "total_claims": 9,
+      "unsupported_claims": [
+        "Here are our top picks from our product catalog:\n\n1.",
+        "If you have any further questions or would like to explore more options, feel free to ask!"
+      ]
+    },
+    {
+      "question": "\u00dfWhat are the best budget earphones under 1000 rupees",
+      "faithfulness": 0.7273,
+      "supported_claims": 8,
+      "total_claims": 11,
+      "unsupported_claims": [
+        "Since the prices in our catalog are in USD, I'll consider the approximate conversion rate (1 USD = 75 INR) to provide recommendations within your budget.",
+        "Here are a few options that match your criteria:\n\n1.",
+        "If you'd like to explore more options or refine your search, please let me know, and I'll be happy to assist you!"
+      ]
+    },
+    {
+      "question": "I want over ear headphones with long battery life",
+      "faithfulness": 0.875,
+      "supported_claims": 7,
+      "total_claims": 8,
+      "unsupported_claims": [
+        "Alternatively, you can refine your search by considering other factors such as price, brand, or specific features like wireless connectivity or microphone quality."
+      ]
+    },
+    {
+      "question": "Best wired earphones with mic for online calls",
+      "faithfulness": 0.7333,
+      "supported_claims": 11,
+      "total_claims": 15,
+      "unsupported_claims": [
+        "With a rating of 3.6 out of 5 stars and over 3,166 reviews, it's a popular choice among customers.",
+        "Although it has fewer reviews (7), it boasts a perfect 5.0 out of 5-star rating.",
+        "With a rating of 4.1 out of 5 stars and 93 reviews, they're a great value for the price of $4.94.",
+        "If you have any further questions or need more recommendations, feel free to ask."
+      ]
+    },
+    {
+      "question": "I need a 5G smartphone with good camera under 20000",
+      "faithfulness": 0.3846,
+      "supported_claims": 5,
+      "total_claims": 13,
+      "unsupported_claims": [
+        "However, please note that the prices in our catalog are in USD and are relatively lower than your specified budget.",
+        "It also comes with up to 8GB of RAM with RAM Plus, ensuring smooth performance.",
+        "Priced at $203.49, it's an affordable option that meets your requirements.",
+        "This provides more space for your apps, photos, and videos.",
+        "It's priced at $230.99, which is still within a reasonable budget.",
+        "However, if you're looking for more RAM and storage, the second option might be more suitable for you.",
+        "Before making a final decision, consider factors like your specific needs for storage, RAM, and any additional features you might require (like waterproofing, headphone jacks, etc.).",
+        "If you're interested in exploring more options or refining your search based on other criteria, feel free to let me know, and I'll be happy to assist you further."
+      ]
+    },
+    {
+      "question": "Recommend a phone with large battery for heavy users",
+      "faithfulness": 0.75,
+      "supported_claims": 9,
+      "total_claims": 12,
+      "unsupported_claims": [
+        "**6GB or 4GB RAM Options**: Choose from 6GB or 4GB RAM configurations, depending on your specific needs and budget.",
+        "**Smooth Performance**: The combination of up to 12GB RAM and a capable processor provides a responsive and efficient user experience.",
+        "**Ample Storage**: The 128GB storage variant offers sufficient space for your files, reducing the need for external storage solutions."
+      ]
+    },
+    {
+      "question": "Best budget Android phone with 128GB storage",
+      "faithfulness": 0.7143,
+      "supported_claims": 10,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "It features a large 6000mAh battery, which provides long-lasting power throughout the day.",
+        "Both options offer 128GB of storage, meeting your primary requirement.",
+        "I hope this helps you make an informed decision.",
+        "If you have any further questions or would like to explore more options, please don't hesitate to ask."
+      ]
+    },
+    {
+      "question": "I want a smartphone good for gaming and performance",
+      "faithfulness": 0.8333,
+      "supported_claims": 10,
+      "total_claims": 12,
+      "unsupported_claims": [
+        "I hope this helps you make an informed decision.",
+        "If you have any further questions or would like to explore more options, please don't hesitate to ask."
+      ]
+    },
+    {
+      "question": "Recommend a phone with good display for watching videos",
+      "faithfulness": 0.9231,
+      "supported_claims": 12,
+      "total_claims": 13,
+      "unsupported_claims": [
+        "After reviewing our product catalog, I found two options that might interest you: \n\n1."
+      ]
+    },
+    {
+      "question": "I need a full HD smart TV for a small bedroom",
+      "faithfulness": 0.8182,
+      "supported_claims": 9,
+      "total_claims": 11,
+      "unsupported_claims": [
+        "Its compact size makes it perfect for a small bedroom.",
+        "Please let me know if you have any further questions or if there's anything else I can help you with!"
+      ]
+    },
+    {
+      "question": "Best 4K QLED television for home theatre setup",
+      "faithfulness": 0.7,
+      "supported_claims": 7,
+      "total_claims": 10,
+      "unsupported_claims": [
+        "Ultimately, the best TV for your home theatre setup will depend on your specific needs and preferences.",
+        "I recommend considering factors such as room size, seating distance, and personal budget when making your decision.",
+        "If you'd like to explore more options or have specific preferences (e.g., brand, screen size, or features), please let me know, and I'll be happy to assist you further."
+      ]
+    },
+    {
+      "question": "Recommend an affordable 32 inch LED TV",
+      "faithfulness": 0.75,
+      "supported_claims": 6,
+      "total_claims": 8,
+      "unsupported_claims": [
+        "All three options are affordable and offer great value for their price.",
+        "Please let me know if you have any further questions or if you'd like to compare these options in more detail."
+      ]
+    },
+    {
+      "question": "I want a smart android TV with good picture quality",
+      "faithfulness": 0.7778,
+      "supported_claims": 7,
+      "total_claims": 9,
+      "unsupported_claims": [
+        "However, if budget is a concern, the Trusense or Imee options may be more suitable for you.",
+        "Which of these options interests you the most, or would you like me to help you refine your search based on specific preferences?"
+      ]
+    },
+    {
+      "question": "Best television brand for watching sports in bright rooms",
+      "faithfulness": 0.9,
+      "supported_claims": 9,
+      "total_claims": 10,
+      "unsupported_claims": [
+        "**Google TV**: With Google TV, you'll have access to a wide range of streaming services, including sports-focused platforms, making it easy to catch your favorite games and events."
+      ]
+    },
+    {
+      "question": "I need a single door refrigerator for a small apartment",
+      "faithfulness": 0.7692,
+      "supported_claims": 10,
+      "total_claims": 13,
+      "unsupported_claims": [
+        "Based on our product catalog, I've shortlisted a few options that might interest you.",
+        "It's energy-efficient, quiet, and has a sleek silver finish that will complement any kitchen decor.",
+        "The red finish adds a pop of color to any kitchen."
+      ]
+    },
+    {
+      "question": "Recommend an energy efficient inverter refrigerator",
+      "faithfulness": 0.9167,
+      "supported_claims": 11,
+      "total_claims": 12,
+      "unsupported_claims": [
+        "It's an ideal choice for smaller households or those with limited space."
+      ]
+    },
+    {
+      "question": "Best double door refrigerator for a family of 4",
+      "faithfulness": 0.7143,
+      "supported_claims": 5,
+      "total_claims": 7,
+      "unsupported_claims": [
+        "Here are my recommendations, along with their key features and benefits:\n\n1.",
+        "However, it is also the most expensive option."
+      ]
+    },
+    {
+      "question": "I want a mini fridge for my car or road trips",
+      "faithfulness": 0.6154,
+      "supported_claims": 8,
+      "total_claims": 13,
+      "unsupported_claims": [
+        "However, please note that it has a lower rating of 2.3 out of 5 stars, based on 14 reviews.",
+        "I would recommend exercising caution when considering this option due to the limited feedback.",
+        "However, please note that it may not be as portable as the other options, and it requires a standard power outlet.",
+        "Its compact size, DC 12V power input, and portable design make it a good fit for car use.",
+        "If none of these options meet your requirements, I'd be happy to help you browse our catalog or refine your search to find a more suitable product."
+      ]
+    },
+    {
+      "question": "Recommend a frost free refrigerator with good reviews",
+      "faithfulness": 0.7143,
+      "supported_claims": 10,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "After reviewing our product catalog, I've shortlisted a few options that meet your criteria.",
+        "With a 4-star rating and over 2555 reviews, it's a reliable and affordable option.",
+        "Although it has a lower rating than the other options, it still provides excellent features and a large capacity.",
+        "If you'd like to explore more options or refine your search, please let me know, and I'll be happy to assist you further."
+      ]
+    },
+    {
+      "question": "I need a DSLR camera for beginner photography",
+      "faithfulness": 0.9091,
+      "supported_claims": 10,
+      "total_claims": 11,
+      "unsupported_claims": [
+        "I hope this information helps, and please don't hesitate to ask if you have any further questions or if there's anything else I can assist you with."
+      ]
+    },
+    {
+      "question": "Best projector for home office presentations",
+      "faithfulness": 0.8889,
+      "supported_claims": 8,
+      "total_claims": 9,
+      "unsupported_claims": [
+        "Here are my top recommendations, along with their key features and benefits:\n\n1."
+      ]
+    },
+    {
+      "question": "Recommend a security surveillance camera for indoors",
+      "faithfulness": 0.7692,
+      "supported_claims": 10,
+      "total_claims": 13,
+      "unsupported_claims": [
+        "This camera is designed for indoor use and offers the following key features:\n\n* **HD 1080p resolution**: Provides clear and sharp video quality, allowing you to capture detailed footage of your indoor space.",
+        "* **Magnet base**: Allows for easy installation and flexibility in placement.",
+        "If you're interested in exploring more options or have specific requirements, I'd be happy to help you browse our catalog or refine your search."
+      ]
+    },
+    {
+      "question": "I want a camera tripod that is sturdy and lightweight",
+      "faithfulness": 0.5882,
+      "supported_claims": 10,
+      "total_claims": 17,
+      "unsupported_claims": [
+        "However, given its metal construction, it might not be the lightest option.",
+        "It's priced at $16.39 with a perfect 5.0 out of 5 rating from 1 review.",
+        "The product description does not explicitly state its material or weight, which might be a consideration for your requirement of lightness.",
+        "However, its price and feature set, including the Bluetooth remote, make it an attractive option for those looking for functionality.",
+        "It's priced at $10.99 with a 5.0 out of 5 rating from 7 reviews.",
+        "It's priced at $10.99 with a 5.0 out of 5 rating from 5 reviews.",
+        "If none of these options perfectly match your needs, I recommend browsing our catalog further or refining your search to include specific weight or material preferences."
+      ]
+    },
+    {
+      "question": "Best action camera for adventure and outdoor sports",
+      "faithfulness": 1.0,
+      "supported_claims": 10,
+      "total_claims": 10,
+      "unsupported_claims": []
+    },
+    {
+      "question": "I need a classic analog watch for formal office wear",
+      "faithfulness": 0.9231,
+      "supported_claims": 12,
+      "total_claims": 13,
+      "unsupported_claims": [
+        "The metal mesh band adds a touch of luxury and can easily be paired with formal attire."
+      ]
+    },
+    {
+      "question": "Recommend a digital sports watch for men",
+      "faithfulness": 0.8,
+      "supported_claims": 8,
+      "total_claims": 10,
+      "unsupported_claims": [
+        "Below, you'll find our top recommendations, each with its key features and benefits.",
+        "If you have any further questions or would like to explore more options, please feel free to ask."
+      ]
+    },
+    {
+      "question": "Best couple watch gift set under 2000 rupees",
+      "faithfulness": 0.5,
+      "supported_claims": 4,
+      "total_claims": 8,
+      "unsupported_claims": [
+        "After reviewing our product catalog, I found two excellent options that fit your budget and preferences.",
+        "Please note that the prices mentioned are in US dollars, so I'll provide an approximate conversion to Indian rupees (1 USD = 75 INR).",
+        "It's an affordable, stylish, and functional option that fits your budget and has an excellent rating.",
+        "If you'd like to explore more options or refine your search, please let me know, and I'll be happy to assist you further."
+      ]
+    },
+    {
+      "question": "I want an elegant analog watch for women",
+      "faithfulness": 0.5385,
+      "supported_claims": 7,
+      "total_claims": 13,
+      "unsupported_claims": [
+        "Based on your query, I'd like to recommend the following products:\n\n1.",
+        "With a rating of 5.0 out of 5 from a customer review, it seems to be a highly-regarded choice.",
+        "The price is $10.99, which is a great value considering its stylish design.",
+        "With a rating of 3.5 out of 5 from 24 customer reviews, it has a relatively good reputation.",
+        "However, if you'd like to explore more options or have specific preferences (e.g., strap material, dial size, or additional features), please let me know, and I'll be happy to assist you further.",
+        "Which of these recommendations catches your eye, or would you like me to suggest more options from our catalog?"
+      ]
+    },
+    {
+      "question": "Recommend a rose gold women's watch for gifting",
+      "faithfulness": 0.6,
+      "supported_claims": 9,
+      "total_claims": 15,
+      "unsupported_claims": [
+        "Based on our product catalog, I've shortlisted three stunning options that fit your criteria.",
+        "With a perfect 5-star rating and a price of $151.69, it's an excellent value for money.",
+        "With a 4.6-star rating and over 146 reviews, it's clear that this watch is a crowd-pleaser.",
+        "With a 4.4-star rating and 50 reviews, it's a reliable choice that won't break the bank.",
+        "If you're looking for a more luxurious feel, the Giordano or Guess W1156L3 might be the way to go.",
+        "Which of these options resonates with you, or would you like me to suggest more options based on specific preferences (e.g., price range, brand, or features)?"
+      ]
+    },
+    {
+      "question": "Best branded women's watch with good ratings",
+      "faithfulness": 0.8571,
+      "supported_claims": 6,
+      "total_claims": 7,
+      "unsupported_claims": [
+        "If you have any further questions or would like to browse our catalog, please don't hesitate to ask."
+      ]
+    },
+    {
+      "question": "I need formal leather shoes for office use",
+      "faithfulness": 0.6923,
+      "supported_claims": 9,
+      "total_claims": 13,
+      "unsupported_claims": [
+        "Our top recommendations are based on customer reviews, ratings, and prices.",
+        "* Benefits: Comfortable, stylish, and durable, making it an excellent choice for daily office use.",
+        "* Benefits: Budget-friendly option, comfortable, and stylish, making it an excellent choice for those looking for a value-for-money option.",
+        "Which of these options appeals to you, or would you like to explore more from our catalog?"
+      ]
+    },
+    {
+      "question": "Recommend lightweight running shoes for men",
+      "faithfulness": 0.7692,
+      "supported_claims": 10,
+      "total_claims": 13,
+      "unsupported_claims": [
+        "Based on our product catalog, here are our top recommendations:\n\n1.",
+        "Whether you prioritize style, performance, or affordability, we're confident that one of these options will meet your needs.",
+        "If you'd like to explore more options or refine your search, please don't hesitate to ask."
+      ]
+    },
+    {
+      "question": "Best casual slip on shoes for women",
+      "faithfulness": 0.9091,
+      "supported_claims": 10,
+      "total_claims": 11,
+      "unsupported_claims": [
+        "With a rating of 4.0 out of 5 and 6 reviews, it's a popular choice among our customers."
+      ]
+    },
+    {
+      "question": "I need a school bag for a 10 year old child",
+      "faithfulness": 0.75,
+      "supported_claims": 6,
+      "total_claims": 8,
+      "unsupported_claims": [
+        "Our top recommendations are based on factors such as durability, functionality, and customer reviews.",
+        "**Why Choose These Products?**\n\n* High-quality materials and construction ensure durability and longevity\n* Spacious interiors and organized compartments help keep your child's belongings organized\n* Stylish designs and color options cater to individual preferences\n* Excellent customer reviews and ratings provide confidence in the product's performance\n\nFeel free to browse our catalog for more options or refine your search based on specific preferences."
+      ]
+    },
+    {
+      "question": "Recommend a travel backpack with laptop compartment",
+      "faithfulness": 0.7778,
+      "supported_claims": 14,
+      "total_claims": 18,
+      "unsupported_claims": [
+        "With a price point of $43.99 and a 4.1-star rating, it's a great value for the price.",
+        "With a 4.7-star rating and 16 reviews, it's a highly recommended product.",
+        "With a 4.4-star rating and 452 reviews, it's a highly rated product.",
+        "Let us know if you have any further questions or if there's anything else we can help you with!"
+      ]
+    },
+    {
+      "question": "Best educational toys for kids aged 4 to 6",
+      "faithfulness": 0.9,
+      "supported_claims": 9,
+      "total_claims": 10,
+      "unsupported_claims": [
+        "They promote learning, creativity, and cognitive development, while also being fun and engaging."
+      ]
+    },
+    {
+      "question": "I want an outdoor activity toy for energetic kids",
+      "faithfulness": 0.6,
+      "supported_claims": 3,
+      "total_claims": 5,
+      "unsupported_claims": [
+        "However, if you're looking for alternative options or would like to explore more products, I'd be happy to help you browse our catalog or refine your search.",
+        "Please let me know if you have any further questions or if there's anything else I can assist you with."
+      ]
+    },
+    {
+      "question": "Recommend a safe hanging toy for newborn babies",
+      "faithfulness": 1.0,
+      "supported_claims": 13,
+      "total_claims": 13,
+      "unsupported_claims": []
+    },
+    {
+      "question": "Best baby clothing set for infants under 1 year",
+      "faithfulness": 0.7,
+      "supported_claims": 7,
+      "total_claims": 10,
+      "unsupported_claims": [
+        "Our top recommendations are based on customer reviews, ratings, and product features.",
+        "The denim material is comfortable and durable, while the matching t-shirt adds a cute touch.",
+        "Although it's designed for 3-6 months, it can still be a great option for younger infants, depending on their size and growth rate."
+      ]
+    },
+    {
+      "question": "I need a beginner acoustic guitar or flute",
+      "faithfulness": 0.8125,
+      "supported_claims": 13,
+      "total_claims": 16,
+      "unsupported_claims": [
+        "The price is $26.4, making it an affordable option for those just starting out.",
+        "Although it has a slightly lower rating of 3.0 out of 5, it could still be a good choice for those on a tighter budget.",
+        "When choosing between these options, consider your budget, personal preferences, and the type of music you want to play."
+      ]
+    },
+    {
+      "question": "Best microphone for YouTube recording at home",
+      "faithfulness": 0.7895,
+      "supported_claims": 15,
+      "total_claims": 19,
+      "unsupported_claims": [
+        "It's designed for online content creation, including YouTube, Instagram, and live streaming.",
+        "With a perfect 5.0 out of 5 rating and a price point of $7.69, it's an excellent choice for those just starting out.",
+        "The wireless design allows for easy movement and reduces the risk of cable interference.",
+        "If you have any further questions or would like more recommendations, feel free to ask!"
+      ]
+    },
+    {
+      "question": "Recommend a home gym kit for strength training beginners",
+      "faithfulness": 0.6471,
+      "supported_claims": 11,
+      "total_claims": 17,
+      "unsupported_claims": [
+        "Based on our product catalog, we've shortlisted two excellent options for you to consider:\n\n**1.",
+        "The foam material ensures a comfortable grip and reduces the risk of injury.",
+        "* Benefits: Affordable, easy to use, and suitable for beginners.",
+        "* Benefits: Versatile, durable, and suitable for beginners and intermediate users.",
+        "Remember to always start with lighter weights and progress gradually as you become more comfortable with the exercises.",
+        "It's also essential to consult with a healthcare professional or a certified personal trainer to ensure you're using the equipment correctly and safely."
+      ]
+    },
+    {
+      "question": "Best weight lifting belt for heavy workouts",
+      "faithfulness": 1.0,
+      "supported_claims": 15,
+      "total_claims": 15,
+      "unsupported_claims": []
+    },
+    {
+      "question": "I want a slam ball for core and cardio training",
+      "faithfulness": 0.8125,
+      "supported_claims": 13,
+      "total_claims": 16,
+      "unsupported_claims": [
+        "Based on your requirements, I've shortlisted some top-notch options from our catalog.",
+        "With a 4.7-star rating and over 1,400 reviews, this product has an excellent reputation.",
+        "With a 4.5-star rating and over 350 reviews, this product offers excellent value for its price."
+      ]
+    }
+  ]
+}

@@ -6,9 +6,9 @@ from dotenv import load_dotenv
 import json
 import hashlib
 from redis import Redis
-# from langchain_community.vectorstores import Redis as RedisVectorStore
 from langchain_redis import RedisVectorStore as LangchainRedisVectorStore
-from redisvl.extensions.llmcache import SemanticCache
+# NOTE: SemanticCache import kept in case you want it for other use, but
+# set_llm_cache is intentionally NOT called — see explanation below.
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.retrievers import BaseRetriever
 from langchain_core.runnables import RunnablePassthrough, RunnableLambda
@@ -16,8 +16,11 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.documents import Document
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_groq import ChatGroq
-from langchain_core.globals import set_llm_cache
-# from langchain_community.vectorstores import Chroma
+# set_llm_cache import intentionally removed — using it with RedisSemanticCache
+# was causing every query to receive the same LLM answer because the prompt
+# template is structurally identical across queries (same system message + same
+# formatting), so the global cache matched on prompt similarity and bypassed the
+# LLM entirely, ignoring the different context/documents that were retrieved.
 from langchain_chroma import Chroma
 
 try:
@@ -26,9 +29,11 @@ try:
 except ImportError:
     _REDIS_AVAILABLE = False
 
-from Reranker import BGEReranker 
+from Reranker import BGEReranker
 
+# ---------------------------------------------------------------------------
 # Prompt
+# ---------------------------------------------------------------------------
 
 SYSTEM = """You are a professional product search assistant.
 Help customers find the best products based on their needs.
@@ -47,20 +52,24 @@ PROMPT = ChatPromptTemplate.from_messages([
     ),
 ])
 
-# Embeddings 
+# ---------------------------------------------------------------------------
+# Embeddings
+# ---------------------------------------------------------------------------
 
 embeddings = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2",
     model_kwargs={"device": "cpu"},
 )
 
-# Redis semantic cache (optional)
+# ---------------------------------------------------------------------------
+# Redis connectivity check
+# ---------------------------------------------------------------------------
+
 load_dotenv()
 REDIS_URL = os.getenv("REDIS_URL")
 
 if REDIS_URL:
     try:
-        from redis import Redis
         r = Redis.from_url(REDIS_URL)
         r.ping()
         print(f"[Redis] Connected ✅ — {REDIS_URL}")
@@ -69,18 +78,32 @@ if REDIS_URL:
 else:
     print("[Redis] REDIS_URL not set ❌")
 
-if REDIS_URL and _REDIS_AVAILABLE:
-    try:
-        set_llm_cache(
-            RedisSemanticCache(
-                redis_url=REDIS_URL,
-                embeddings=embeddings,
-                distance_threshold=0.98,
-            )
-        )
-        print("Redis semantic cache enabled.")
-    except Exception as exc:
-        print(f"Redis cache setup failed (continuing without cache): {exc}")
+# ---------------------------------------------------------------------------
+# WHY set_llm_cache IS REMOVED
+# ---------------------------------------------------------------------------
+# set_llm_cache(RedisSemanticCache(...)) caches at the *LLM call* level.
+# LangChain computes the cache key from the fully-rendered prompt string.
+# Because our PROMPT template has the same system message and the same
+# structural boilerplate for every query, two semantically-similar *questions*
+# (e.g. "show me a watch" vs "I need something to tell time") produce prompt
+# strings that are very close in embedding space — well above the 0.98
+# threshold — even when the retrieved *context* is completely different.
+# The result: the cache returns the first-ever LLM answer for almost every
+# subsequent query, making it look like the LLM always recommends the same
+# products.
+#
+# The CachedRetriever below already handles caching at the *retrieval* layer
+# (documents + reranking), which is the expensive part. Letting the LLM run
+# fresh on each distinct (input, context) pair is both correct and cheap.
+#
+# If you still want LLM-response caching in the future, use an exact-match
+# cache (e.g. Redis key = hash of the full rendered prompt) rather than a
+# semantic/vector cache — or lower the threshold drastically (e.g. 0.50) and
+# accept more cache misses.
+
+# ---------------------------------------------------------------------------
+# Redis lazy-init helpers
+# ---------------------------------------------------------------------------
 
 _redis_client = None
 _redis_context_store = None
@@ -90,7 +113,6 @@ def _get_redis_client():
     global _redis_client
     if _redis_client is None and REDIS_URL:
         try:
-            from redis import Redis
             _redis_client = Redis.from_url(REDIS_URL, decode_responses=True)
             _redis_client.ping()
             print("[Redis] Client connected ✅")
@@ -103,26 +125,6 @@ def _get_redis_context_store():
     global _redis_context_store
     if _redis_context_store is None and REDIS_URL:
         try:
-            schema = {
-                "index": {
-                    "name": "product_context_cache",
-                    "prefix": "ctx",
-                },
-                "fields": [
-                    {"name": "text", "type": "text"},
-                    {
-                        "name": "embedding",
-                        "type": "vector",
-                        "attrs": {
-                            "algorithm": "flat",
-                            "dims": 384,          # all-MiniLM-L6-v2 output dims
-                            "distance_metric": "cosine",
-                            "datatype": "float32",
-                        },
-                    },
-                ],
-            }
-
             _redis_context_store = LangchainRedisVectorStore(
                 redis_url=REDIS_URL,
                 embeddings=embeddings,
@@ -133,18 +135,37 @@ def _get_redis_context_store():
             print(f"[Redis] Context store init failed: {e}")
     return _redis_context_store
 
-CONTEXT_CACHE_THRESHOLD = 0.92   # cosine similarity threshold — tune this
-CONTEXT_CACHE_TTL = 60 * 60 * 24  # 24 hours in seconds
+
+# ---------------------------------------------------------------------------
+# Cache thresholds
+# ---------------------------------------------------------------------------
+
+# Cosine-similarity threshold for the *retrieval* cache.
+# Only reuse cached documents when the new query is very close to a past one.
+# 0.92 is a reasonable starting point — lower it (e.g. 0.85) if you are
+# seeing too many cache misses, raise it if unrelated queries share results.
+CONTEXT_CACHE_THRESHOLD = 0.92
+CONTEXT_CACHE_TTL = 60 * 60 * 24  # 24 hours
+
+
+# ---------------------------------------------------------------------------
+# CachedRetriever
+# ---------------------------------------------------------------------------
 
 class CachedRetriever(BaseRetriever):
     """
     Retrieval flow:
-      1. Semantic search in Redis cache for similar past queries
-      2. HIT  → return cached documents directly
-      3. MISS → search Chroma → rerank → store context in Redis → return
+      1. Semantic search in Redis for a similar past query.
+      2. HIT  (similarity >= threshold) → return cached Document list.
+      3. MISS → query Chroma → BGE-rerank → store in Redis → return.
+
+    Only the *retrieval + reranking* result is cached, not the LLM answer.
+    This avoids the stale-answer bug that arises from caching at the LLM layer.
     """
+
     base_retriever: Any
     reranker: Any
+
     def _get_relevant_documents(self, query: str, *, run_manager=None) -> list[Document]:
         redis_store = _get_redis_context_store()
         redis_client = _get_redis_client()
@@ -154,11 +175,11 @@ class CachedRetriever(BaseRetriever):
 
         if redis_store and redis_client:
             try:
-                # Guard: skip search if index is empty
-                index_size = redis_client.execute_command(
+                # Guard: skip search when the index has no documents yet.
+                index_info = redis_client.execute_command(
                     "FT.INFO", "product_context_cache"
                 )
-                info_dict = dict(zip(index_size[::2], index_size[1::2]))
+                info_dict = dict(zip(index_info[::2], index_info[1::2]))
                 doc_count = int(info_dict.get("num_docs", 0))
                 print(f"[Cache] Index has {doc_count} docs")
 
@@ -168,10 +189,13 @@ class CachedRetriever(BaseRetriever):
                     )
                     if cached_results:
                         top_doc, score = cached_results[0]
-                        # langchain_redis returns distance (lower = more similar)
-                        # convert to similarity
-                        similarity = 1 - score
-                        print(f"[Cache] Top similarity: {similarity:.3f} (threshold: {CONTEXT_CACHE_THRESHOLD})")
+                        # langchain_redis returns cosine *distance* (0 = identical).
+                        # Convert to similarity so the threshold feels intuitive.
+                        similarity = 1.0 - score
+                        print(
+                            f"[Cache] Top similarity: {similarity:.3f} "
+                            f"(threshold: {CONTEXT_CACHE_THRESHOLD})"
+                        )
 
                         if similarity >= CONTEXT_CACHE_THRESHOLD:
                             cache_key = top_doc.metadata.get("context_cache_key")
@@ -179,30 +203,32 @@ class CachedRetriever(BaseRetriever):
                             if cache_key:
                                 raw = redis_client.get(cache_key)
                                 if raw:
-                                    cached_docs_data = json.loads(raw)
                                     return [
                                         Document(
                                             page_content=d["page_content"],
-                                            metadata=d["metadata"]
+                                            metadata=d["metadata"],
                                         )
-                                        for d in cached_docs_data
+                                        for d in json.loads(raw)
                                     ]
                                 else:
-                                    print("[Cache] Key expired or missing")
+                                    print("[Cache] Key expired or missing — fetching fresh")
                         else:
-                            print(f"[Cache MISS] Score {similarity:.3f} below threshold")
+                            print(
+                                f"[Cache MISS] Similarity {similarity:.3f} "
+                                f"below threshold {CONTEXT_CACHE_THRESHOLD}"
+                            )
                 else:
-                    print("[Cache MISS] Index empty, skipping lookup")
+                    print("[Cache MISS] Index empty — fetching fresh")
 
             except Exception as e:
-                print(f"[Cache] Lookup error: {e}")
+                print(f"[Cache] Lookup error (falling through to Chroma): {e}")
 
-        # Fall through to Chroma
-        print(f"[Cache MISS] Searching Chroma for: '{query}'")
+        # ── Cache miss: retrieve from Chroma and rerank ──────────────────────
+        print(f"[Chroma] Retrieving for: '{query}'")
         docs = self.base_retriever.invoke(query)
         reranked_docs = self.reranker.rank(query, docs, top_n=3)
 
-        # Store in Redis
+        # Store the reranked docs so the next similar query gets a cache hit.
         if redis_store and redis_client:
             try:
                 cache_key = "ctx:" + hashlib.md5(query.encode()).hexdigest()
@@ -212,7 +238,7 @@ class CachedRetriever(BaseRetriever):
                     json.dumps([
                         {"page_content": d.page_content, "metadata": d.metadata}
                         for d in reranked_docs
-                    ])
+                    ]),
                 )
                 redis_store.add_texts(
                     texts=[query],
@@ -224,7 +250,10 @@ class CachedRetriever(BaseRetriever):
 
         return reranked_docs
 
+
+# ---------------------------------------------------------------------------
 # Vector store helper
+# ---------------------------------------------------------------------------
 
 def get_vector_store() -> Chroma:
     return Chroma(
@@ -232,9 +261,13 @@ def get_vector_store() -> Chroma:
         embedding_function=embeddings,
     )
 
-# Chain builder 
+
+# ---------------------------------------------------------------------------
+# Chain builder
+# ---------------------------------------------------------------------------
 
 _rag_chain = None
+
 
 def _format_docs(docs: list[Document]) -> str:
     """Concatenate document page_content into a single context string."""
@@ -242,7 +275,7 @@ def _format_docs(docs: list[Document]) -> str:
 
 
 def _build_chain():
-    """Build (and cache) the RAG chain using LCEL."""
+    """Build (and module-level cache) the RAG chain."""
     global _rag_chain
     if _rag_chain is not None:
         return _rag_chain
@@ -250,15 +283,8 @@ def _build_chain():
     store = get_vector_store()
     base_retriever = store.as_retriever(search_kwargs={"k": 5})
     reranker = BGEReranker()
-    # retriever = CustomRetriever(
-    #     base_retriever=base_retriever,
-    #     reranker=reranker,
-    # )
-
     retriever = CachedRetriever(base_retriever=base_retriever, reranker=reranker)
 
-
-    load_dotenv()
     llm = ChatGroq(
         model="llama-3.3-70b-versatile",
         groq_api_key=os.getenv("GROQ_API_KEY"),
@@ -266,19 +292,14 @@ def _build_chain():
         max_tokens=512,
     )
 
-    # LCEL pipeline — replaces the removed create_retrieval_chain /
-    # create_stuff_documents_chain helpers from langchain.chains.
-    #
+    # LCEL pipeline
     # Input:  {"input": "<user question>"}
     # Output: {"input": ..., "context": [Document, ...], "answer": "..."}
     _rag_chain = (
         RunnablePassthrough.assign(
-            # 1. Retrieve + rerank; keep the raw Document list in "context"
             context=RunnableLambda(lambda x: retriever.invoke(x["input"]))
         )
         | RunnablePassthrough.assign(
-            # 2. Format docs into a plain-text string for the prompt,
-            #    then call the LLM and parse its output as a string.
             answer=(
                 RunnableLambda(
                     lambda x: PROMPT.invoke(
@@ -296,7 +317,10 @@ def _build_chain():
 
     return _rag_chain
 
+
+# ---------------------------------------------------------------------------
 # Public search function
+# ---------------------------------------------------------------------------
 
 async def search_products_async(
     question: str,
@@ -326,13 +350,11 @@ async def search_products_async(
         raise ValueError("question must be a non-empty string.")
 
     chain = _build_chain()
-
     result: dict = await chain.ainvoke({"input": question})
 
     answer: str = result["answer"]
     docs: list[Document] = result["context"]
 
-    # Collect product IDs present in the retrieved docs
     product_ids: list[str] = [
         doc.metadata["product_id"]
         for doc in docs
@@ -367,8 +389,9 @@ async def search_products_async(
     return answer, products, contexts
 
 
-
+# ---------------------------------------------------------------------------
 # CLI entry-point
+# ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
     import argparse

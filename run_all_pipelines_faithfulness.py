@@ -23,7 +23,7 @@ for _mod, _attr in [
 # ── Pipeline registry — add or remove as needed ───────────────────────────────
 PIPELINES = [
              # BM25 + BGE
-    "RAG_HYBRID_SEARCH",  # hybrid + BGE  ← already done, will be skipped
+    # "RAG_HYBRID_SEARCH",  # hybrid + BGE  ← already done, will be skipped
     "RAG_Redis",          # hybrid + Redis
 ]
 
@@ -96,7 +96,7 @@ async def main():
     with open("test_queries50.json") as f:
         queries = json.load(f)
 
-    queries = queries[:30]
+    # queries = queries[:30]
 
     print(f"Loaded {len(queries)} queries")
     print(f"Pipelines to run: {PIPELINES}")

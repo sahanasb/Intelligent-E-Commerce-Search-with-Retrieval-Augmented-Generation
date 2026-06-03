@@ -1,0 +1,603 @@
+{
+  "pipeline": "RAG_Redis",
+  "average_faithfulness": 0.15,
+  "per_query": [
+    {
+      "question": "I need a speaker for a beach party",
+      "faithfulness": 0.8571,
+      "supported_claims": 12,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision."
+      ]
+    },
+    {
+      "question": "What is a good portable bluetooth speaker for outdoor use",
+      "faithfulness": 0.5714,
+      "supported_claims": 8,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "Recommend an affordable home theater speaker system",
+      "faithfulness": 0.5,
+      "supported_claims": 7,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "I want a waterproof speaker for camping trips",
+      "faithfulness": 0.5,
+      "supported_claims": 7,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "Best mini bluetooth speaker that fits in a bag",
+      "faithfulness": 0.5714,
+      "supported_claims": 8,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "I need wireless headphones for the gym",
+      "faithfulness": 0.2143,
+      "supported_claims": 3,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "Recommend noise cancellin   g headphones for travel",
+      "faithfulness": 0.2143,
+      "supported_claims": 3,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "\u00dfWhat are the best budget earphones under 1000 rupees",
+      "faithfulness": 0.2857,
+      "supported_claims": 4,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "I want over ear headphones with long battery life",
+      "faithfulness": 0.2143,
+      "supported_claims": 3,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "Best wired earphones with mic for online calls",
+      "faithfulness": 0.2143,
+      "supported_claims": 3,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "I need a 5G smartphone with good camera under 20000",
+      "faithfulness": 0.0,
+      "supported_claims": 0,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "**Top Recommendation:**\n**Landmark LM TBS7021 20W Wireless Bluetooth Party Speaker**\n- **Price:** $87.99\n- **Rating:** 5.0 out of 5\n- **Key Features:** Splashproof, 4000mAh battery, mic, handsfree calling, and wireless Bluetooth connectivity.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "Recommend a phone with large battery for heavy users",
+      "faithfulness": 0.0,
+      "supported_claims": 0,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "**Top Recommendation:**\n**Landmark LM TBS7021 20W Wireless Bluetooth Party Speaker**\n- **Price:** $87.99\n- **Rating:** 5.0 out of 5\n- **Key Features:** Splashproof, 4000mAh battery, mic, handsfree calling, and wireless Bluetooth connectivity.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "Best budget Android phone with 128GB storage",
+      "faithfulness": 0.0,
+      "supported_claims": 0,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "**Top Recommendation:**\n**Landmark LM TBS7021 20W Wireless Bluetooth Party Speaker**\n- **Price:** $87.99\n- **Rating:** 5.0 out of 5\n- **Key Features:** Splashproof, 4000mAh battery, mic, handsfree calling, and wireless Bluetooth connectivity.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "I want a smartphone good for gaming and performance",
+      "faithfulness": 0.1429,
+      "supported_claims": 2,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "Recommend a phone with good display for watching videos",
+      "faithfulness": 0.0,
+      "supported_claims": 0,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "**Top Recommendation:**\n**Landmark LM TBS7021 20W Wireless Bluetooth Party Speaker**\n- **Price:** $87.99\n- **Rating:** 5.0 out of 5\n- **Key Features:** Splashproof, 4000mAh battery, mic, handsfree calling, and wireless Bluetooth connectivity.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "I need a full HD smart TV for a small bedroom",
+      "faithfulness": 0.0,
+      "supported_claims": 0,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "**Top Recommendation:**\n**Landmark LM TBS7021 20W Wireless Bluetooth Party Speaker**\n- **Price:** $87.99\n- **Rating:** 5.0 out of 5\n- **Key Features:** Splashproof, 4000mAh battery, mic, handsfree calling, and wireless Bluetooth connectivity.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "Best 4K QLED television for home theatre setup",
+      "faithfulness": 0.0,
+      "supported_claims": 0,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "**Top Recommendation:**\n**Landmark LM TBS7021 20W Wireless Bluetooth Party Speaker**\n- **Price:** $87.99\n- **Rating:** 5.0 out of 5\n- **Key Features:** Splashproof, 4000mAh battery, mic, handsfree calling, and wireless Bluetooth connectivity.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "Recommend an affordable 32 inch LED TV",
+      "faithfulness": 0.0,
+      "supported_claims": 0,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "**Top Recommendation:**\n**Landmark LM TBS7021 20W Wireless Bluetooth Party Speaker**\n- **Price:** $87.99\n- **Rating:** 5.0 out of 5\n- **Key Features:** Splashproof, 4000mAh battery, mic, handsfree calling, and wireless Bluetooth connectivity.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "I want a smart android TV with good picture quality",
+      "faithfulness": 0.0714,
+      "supported_claims": 1,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "Best television brand for watching sports in bright rooms",
+      "faithfulness": 0.0,
+      "supported_claims": 0,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "**Top Recommendation:**\n**Landmark LM TBS7021 20W Wireless Bluetooth Party Speaker**\n- **Price:** $87.99\n- **Rating:** 5.0 out of 5\n- **Key Features:** Splashproof, 4000mAh battery, mic, handsfree calling, and wireless Bluetooth connectivity.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "I need a single door refrigerator for a small apartment",
+      "faithfulness": 0.0,
+      "supported_claims": 0,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "**Top Recommendation:**\n**Landmark LM TBS7021 20W Wireless Bluetooth Party Speaker**\n- **Price:** $87.99\n- **Rating:** 5.0 out of 5\n- **Key Features:** Splashproof, 4000mAh battery, mic, handsfree calling, and wireless Bluetooth connectivity.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "Recommend an energy efficient inverter refrigerator",
+      "faithfulness": 0.0,
+      "supported_claims": 0,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "**Top Recommendation:**\n**Landmark LM TBS7021 20W Wireless Bluetooth Party Speaker**\n- **Price:** $87.99\n- **Rating:** 5.0 out of 5\n- **Key Features:** Splashproof, 4000mAh battery, mic, handsfree calling, and wireless Bluetooth connectivity.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "Best double door refrigerator for a family of 4",
+      "faithfulness": 0.0,
+      "supported_claims": 0,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "**Top Recommendation:**\n**Landmark LM TBS7021 20W Wireless Bluetooth Party Speaker**\n- **Price:** $87.99\n- **Rating:** 5.0 out of 5\n- **Key Features:** Splashproof, 4000mAh battery, mic, handsfree calling, and wireless Bluetooth connectivity.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "I want a mini fridge for my car or road trips",
+      "faithfulness": 0.0,
+      "supported_claims": 0,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "**Top Recommendation:**\n**Landmark LM TBS7021 20W Wireless Bluetooth Party Speaker**\n- **Price:** $87.99\n- **Rating:** 5.0 out of 5\n- **Key Features:** Splashproof, 4000mAh battery, mic, handsfree calling, and wireless Bluetooth connectivity.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "Recommend a frost free refrigerator with good reviews",
+      "faithfulness": 0.0,
+      "supported_claims": 0,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "**Top Recommendation:**\n**Landmark LM TBS7021 20W Wireless Bluetooth Party Speaker**\n- **Price:** $87.99\n- **Rating:** 5.0 out of 5\n- **Key Features:** Splashproof, 4000mAh battery, mic, handsfree calling, and wireless Bluetooth connectivity.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "I need a DSLR camera for beginner photography",
+      "faithfulness": 0.0,
+      "supported_claims": 0,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "**Top Recommendation:**\n**Landmark LM TBS7021 20W Wireless Bluetooth Party Speaker**\n- **Price:** $87.99\n- **Rating:** 5.0 out of 5\n- **Key Features:** Splashproof, 4000mAh battery, mic, handsfree calling, and wireless Bluetooth connectivity.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "Best projector for home office presentations",
+      "faithfulness": 0.1429,
+      "supported_claims": 2,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "Recommend a security surveillance camera for indoors",
+      "faithfulness": 0.0,
+      "supported_claims": 0,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "**Top Recommendation:**\n**Landmark LM TBS7021 20W Wireless Bluetooth Party Speaker**\n- **Price:** $87.99\n- **Rating:** 5.0 out of 5\n- **Key Features:** Splashproof, 4000mAh battery, mic, handsfree calling, and wireless Bluetooth connectivity.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "I want a camera tripod that is sturdy and lightweight",
+      "faithfulness": 0.0,
+      "supported_claims": 0,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "**Top Recommendation:**\n**Landmark LM TBS7021 20W Wireless Bluetooth Party Speaker**\n- **Price:** $87.99\n- **Rating:** 5.0 out of 5\n- **Key Features:** Splashproof, 4000mAh battery, mic, handsfree calling, and wireless Bluetooth connectivity.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    },
+    {
+      "question": "Best action camera for adventure and outdoor sports",
+      "faithfulness": 0.0,
+      "supported_claims": 0,
+      "total_claims": 14,
+      "unsupported_claims": [
+        "**Beach Party Speaker Recommendations**\n\nWe've got just the right speakers to make your beach party an unforgettable experience.",
+        "Based on your query, we've shortlisted two fantastic options that are perfect for a fun-filled day by the sea.",
+        "**Top Recommendation:**\n**Landmark LM TBS7021 20W Wireless Bluetooth Party Speaker**\n- **Price:** $87.99\n- **Rating:** 5.0 out of 5\n- **Key Features:** Splashproof, 4000mAh battery, mic, handsfree calling, and wireless Bluetooth connectivity.",
+        "- **Benefits:** This speaker is ideal for a beach party due to its splashproof design, ensuring it can withstand accidental water splashes.",
+        "The long-lasting 4000mAh battery provides hours of uninterrupted music, and the mic allows for handsfree calling.",
+        "**Alternative Option:**\n**JBL PartyBox Encore Essential**\n- **Price:** $329.99\n- **Rating:** 4.5 out of 5\n- **Key Features:** 100W monstrous pro sound, dynamic light show, portable Bluetooth party speaker, and up to 6 hours of playback.",
+        "- **Benefits:** If you're looking for a more powerful speaker with an impressive sound system, the JBL PartyBox Encore Essential is a great choice.",
+        "The dynamic light show adds an extra layer of fun to your beach party, and the speaker's portability makes it easy to move around.",
+        "**Budget-Friendly Option:**\n**Zepad Wireless Bluetooth Speaker**\n- **Price:** $32.99\n- **Rating:** 2.5 out of 5\n- **Key Features:** Portable speaker with mic, super bass, splashproof, and suitable for house parties and dance events.",
+        "- **Benefits:** While this speaker has a lower rating, it's still a viable option for those on a tight budget.",
+        "The splashproof design and super bass features make it a decent choice for a beach party.",
+        "Consider your budget and the level of sound quality you're looking for when making your decision.",
+        "If you're willing to invest in a high-quality speaker with impressive sound, the JBL PartyBox Encore Essential might be the way to go.",
+        "However, if you're looking for a more affordable option with a reliable splashproof design, the Landmark LM TBS7021 is an excellent choice."
+      ]
+    }
+  ]
+}
