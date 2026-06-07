@@ -1,0 +1,13 @@
+[
+  {"id": 1, "question": "Best wired earphones with mic for online calls",              "category": "Headphones"},
+  {"id": 2,  "question": "What is a good portable bluetooth speaker for outdoor use",   "category": "Speakers"},
+  {"id": 3,  "question": "Recommend an affordable home theater speaker system",         "category": "Speakers"},
+  {"id": 4,  "question": "I want a waterproof speaker for camping trips",               "category": "Speakers"},
+  {"id": 5,  "question": "Best mini bluetooth speaker that fits in a bag",              "category": "Speakers"},
+
+  {"id": 6,  "question": "I need wireless headphones for the gym",                      "category": "Headphones"},
+  {"id": 7,  "question": "What is a good portable bluetooth speaker for outdoor use",   "category": "Speakers"},
+  {"id": 8,  "question": "ßWhat are the best budget earphones under 1000 rupees",        "category": "Headphones"},
+  {"id": 9,  "question": "I want over ear headphones with long battery life",           "category": "Headphones"},
+  {"id": 10, "question": "Best wired earphones with mic for online calls",              "category": "Headphones"}
+]
