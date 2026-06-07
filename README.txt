@@ -65,3 +65,64 @@ No products found (check product_db and category filter).
 product: landmark lm tbs7021 20w wireless bluetooth party speaker with mic & handsfree calling/ splashproof/ 4000mah battery - (bla.... category: speakers. price: $87.99. rating: 5.0 out of 5. reviews: 3. landmark lm tbs7021 20w wireless bluetooth party speaker with mic & handsfree calling/ splashproof/ 4000mah battery - (bla...
 product: jbl partybox encore essential | portable bluetooth party speaker | 100w monstrous pro sound | dynamic light show | upto 6h.... category: speakers. price: $329.99. rating: 4.5 out of 5. reviews: 136. jbl partybox encore essential | portable bluetooth party speaker | 100w monstrous pro sound | dynamic light show | upto 6h...
 product: zepad wireless bluetooth speaker portable speaker with mic super bass splashproof for house party dance (army color). category: speakers. price: $32.99. rating: 2.5 out of 5. reviews: 22. zepad wireless bluetooth speaker portable speaker with mic super bass splashproof for house party dance (army color)
+
+
+## Evaluation: Faithfulness and Latency
+
+Run the RAG pipelines first
+python run_all_pipelines.py
+
+This creates files such as:
+rag_outputs_RAG_BM25.json
+rag_outputs_RAG.json
+rag_outputs_RAG_HYBRID_SEARCH.json
+rag_outputs_RAG_Redis.json
+
+1. Calculate Faithfulness
+python score_faithfulness.py RAG_BM25
+python score_faithfulness.py RAG
+python score_faithfulness.py RAG_HYBRID_SEARCH
+python score_faithfulness.py RAG_Redis
+
+This generates:
+
+faithfulness_RAG_BM25.json
+faithfulness_RAG.json
+faithfulness_RAG_HYBRID_SEARCH.json
+faithfulness_RAG_Redis.json
+
+and CSV files for plotting:
+
+faithfulness_scores_RAG_BM25.csv
+faithfulness_scores_RAG.csv
+faithfulness_scores_RAG_HYBRID_SEARCH.csv
+faithfulness_scores_RAG_Redis.csv
+
+2. Calculate Latency
+
+Run:
+python latency_test.py
+
+This uses:
+test_queries10.json
+
+and generates:
+latency_results.json
+
+3. Generate Plots
+Run:
+python plot_results.py
+
+This generates figures such as:
+answer_relevancy_bar.png
+
+Correct Order:
+python run_all_pipelines.py
+python score_faithfulness.py RAG_BM25
+python score_faithfulness.py RAG
+python score_faithfulness.py RAG_HYBRID_SEARCH
+python score_faithfulness.py RAG_Redis
+python latency_test.py
+python plot_results.py
+
+
