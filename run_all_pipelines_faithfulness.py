@@ -81,7 +81,7 @@ async def run_pipeline(module_name: str, queries: list[dict]):
             print(f"    [ERROR] {e}")
             skipped.append(q)
 
-        await asyncio.sleep(3)  # avoid Groq rate limit
+        await asyncio.sleep(15)  # avoid Groq rate limit
 
     with open(out_file, "w") as f:
         json.dump(outputs, f, indent=2)
